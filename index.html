@@ -103,7 +103,6 @@
             opacity: 1
         }
 
-        /* Custom cursor glow */
         #cursor-glow {
             position: fixed;
             width: 400px;
@@ -122,7 +121,6 @@
             opacity: 1
         }
 
-        /* Smooth section transitions */
         .section-parallax {
             will-change: transform, opacity;
         }
@@ -327,45 +325,18 @@
             transform: none
         }
 
-        .stagger.visible>*:nth-child(1) {
-            transition-delay: 0.05s
-        }
-
-        .stagger.visible>*:nth-child(2) {
-            transition-delay: 0.10s
-        }
-
-        .stagger.visible>*:nth-child(3) {
-            transition-delay: 0.15s
-        }
-
-        .stagger.visible>*:nth-child(4) {
-            transition-delay: 0.20s
-        }
-
-        .stagger.visible>*:nth-child(5) {
-            transition-delay: 0.25s
-        }
-
-        .stagger.visible>*:nth-child(6) {
-            transition-delay: 0.30s
-        }
-
-        .stagger.visible>*:nth-child(7) {
-            transition-delay: 0.35s
-        }
-
-        .stagger.visible>*:nth-child(8) {
-            transition-delay: 0.40s
-        }
-
-        .stagger.visible>*:nth-child(9) {
-            transition-delay: 0.45s
-        }
-
-        .stagger.visible>*:nth-child(10) {
-            transition-delay: 0.50s
-        }
+        .stagger.visible>*:nth-child(1) { transition-delay: 0.05s }
+        .stagger.visible>*:nth-child(2) { transition-delay: 0.10s }
+        .stagger.visible>*:nth-child(3) { transition-delay: 0.15s }
+        .stagger.visible>*:nth-child(4) { transition-delay: 0.20s }
+        .stagger.visible>*:nth-child(5) { transition-delay: 0.25s }
+        .stagger.visible>*:nth-child(6) { transition-delay: 0.30s }
+        .stagger.visible>*:nth-child(7) { transition-delay: 0.35s }
+        .stagger.visible>*:nth-child(8) { transition-delay: 0.40s }
+        .stagger.visible>*:nth-child(9) { transition-delay: 0.45s }
+        .stagger.visible>*:nth-child(10) { transition-delay: 0.50s }
+        .stagger.visible>*:nth-child(11) { transition-delay: 0.55s }
+        .stagger.visible>*:nth-child(12) { transition-delay: 0.60s }
 
         /* HERO */
         #hero {
@@ -411,17 +382,8 @@
         }
 
         @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1)
-            }
-
-            50% {
-                opacity: 0.5;
-                transform: scale(0.8)
-            }
+            0%, 100% { opacity: 1; transform: scale(1) }
+            50% { opacity: 0.5; transform: scale(0.8) }
         }
 
         .hero-name {
@@ -434,9 +396,7 @@
             margin-bottom: 0.5rem
         }
 
-        .hero-name span {
-            display: block
-        }
+        .hero-name span { display: block }
 
         .hero-role {
             font-family: 'Instrument Serif', serif;
@@ -487,9 +447,7 @@
             transition: transform 0.3s
         }
 
-        .hero-stats>div:hover .stat-num {
-            transform: scale(1.05)
-        }
+        .hero-stats>div:hover .stat-num { transform: scale(1.05) }
 
         .stat-label {
             font-size: 0.75rem;
@@ -537,9 +495,7 @@
             transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)
         }
 
-        .profile-img-wrap:hover img {
-            transform: scale(1.03)
-        }
+        .profile-img-wrap:hover img { transform: scale(1.03) }
 
         .profile-ring {
             position: absolute;
@@ -558,13 +514,8 @@
         }
 
         @keyframes slowRotate {
-            from {
-                transform: rotate(0deg)
-            }
-
-            to {
-                transform: rotate(360deg)
-            }
+            from { transform: rotate(0deg) }
+            to { transform: rotate(360deg) }
         }
 
         .float-chip {
@@ -584,34 +535,13 @@
             letter-spacing: -0.01em
         }
 
-        .float-chip.chip1 {
-            top: 5%;
-            right: -20px;
-            animation-delay: 0s
-        }
-
-        .float-chip.chip2 {
-            bottom: 15%;
-            right: -30px;
-            animation-delay: 1.2s
-        }
-
-        .float-chip.chip3 {
-            bottom: 5%;
-            left: -10px;
-            animation-delay: 2.4s
-        }
+        .float-chip.chip1 { top: 5%; right: -20px; animation-delay: 0s }
+        .float-chip.chip2 { bottom: 15%; right: -30px; animation-delay: 1.2s }
+        .float-chip.chip3 { bottom: 5%; left: -10px; animation-delay: 2.4s }
 
         @keyframes chipFloat {
-
-            0%,
-            100% {
-                transform: translateY(0)
-            }
-
-            50% {
-                transform: translateY(-6px)
-            }
+            0%, 100% { transform: translateY(0) }
+            50% { transform: translateY(-6px) }
         }
 
         /* ABOUT */
@@ -682,9 +612,7 @@
             transition: transform 0.3s
         }
 
-        .about-card:hover .about-card-icon {
-            transform: scale(1.05)
-        }
+        .about-card:hover .about-card-icon { transform: scale(1.05) }
 
         .about-card-title {
             font-weight: 600;
@@ -858,9 +786,7 @@
             font-weight: 400
         }
 
-        .exp-points {
-            list-style: none
-        }
+        .exp-points { list-style: none }
 
         .exp-points li {
             font-size: 0.85rem;
@@ -915,9 +841,7 @@
             transition: opacity 0.3s
         }
 
-        .project-card:hover .project-card-glow {
-            opacity: 1
-        }
+        .project-card:hover .project-card-glow { opacity: 1 }
 
         .project-card:hover {
             border-color: var(--border);
@@ -938,9 +862,7 @@
             letter-spacing: -0.03em
         }
 
-        .project-card:hover .project-num {
-            color: var(--text-tertiary)
-        }
+        .project-card:hover .project-num { color: var(--text-tertiary) }
 
         .project-title {
             font-weight: 600;
@@ -1026,9 +948,7 @@
             box-shadow: var(--shadow)
         }
 
-        .edu-card:hover::after {
-            transform: scaleX(1)
-        }
+        .edu-card:hover::after { transform: scaleX(1) }
 
         .edu-degree {
             font-weight: 600;
@@ -1105,9 +1025,7 @@
             box-shadow: var(--shadow)
         }
 
-        .cert-card:hover::before {
-            opacity: 1
-        }
+        .cert-card:hover::before { opacity: 1 }
 
         .cert-icon {
             width: 44px;
@@ -1123,9 +1041,7 @@
             border: 1px solid var(--border-light)
         }
 
-        .cert-card:hover .cert-icon {
-            transform: scale(1.05)
-        }
+        .cert-card:hover .cert-icon { transform: scale(1.05) }
 
         .cert-name {
             font-weight: 600;
@@ -1158,8 +1074,69 @@
             font-weight: 500
         }
 
-        .cert-card:hover .cert-view-hint {
-            opacity: 1
+        .cert-card:hover .cert-view-hint { opacity: 1 }
+
+        /* ACHIEVEMENTS */
+        #achievements {
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light)
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto
+        }
+
+        .achievement-card {
+            background: var(--surface);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius);
+            padding: 1.75rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            transition: var(--transition-fast);
+            position: relative;
+            overflow: hidden
+        }
+
+        .achievement-card:hover {
+            border-color: var(--border);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow)
+        }
+
+        .achievement-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--bg-muted);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+            transition: transform 0.3s
+        }
+
+        .achievement-card:hover .achievement-icon { transform: scale(1.05) }
+
+        .achievement-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.35rem;
+            color: var(--text);
+            letter-spacing: -0.01em
+        }
+
+        .achievement-text {
+            font-size: 0.83rem;
+            color: var(--text-secondary);
+            line-height: 1.65
         }
 
         /* CONTACT */
@@ -1174,9 +1151,7 @@
             text-align: center
         }
 
-        .contact-inner .section-title {
-            margin-bottom: 1rem
-        }
+        .contact-inner .section-title { margin-bottom: 1rem }
 
         .contact-sub {
             font-size: 1rem;
@@ -1269,9 +1244,7 @@
             background: var(--surface)
         }
 
-        .cert-modal-overlay.active .cert-modal-box {
-            transform: scale(1) translateY(0)
-        }
+        .cert-modal-overlay.active .cert-modal-box { transform: scale(1) translateY(0) }
 
         .cert-modal-box img {
             width: 100%;
@@ -1327,35 +1300,24 @@
                 padding-top: 8rem
             }
 
-            .hero-content {
-                max-width: 100%
-            }
+            .hero-content { max-width: 100% }
 
             .hero-bio {
                 margin-left: auto;
                 margin-right: auto
             }
 
-            .hero-actions {
-                justify-content: center
-            }
+            .hero-actions { justify-content: center }
+            .hero-stats { justify-content: center }
 
-            .hero-stats {
-                justify-content: center
-            }
-
-            .hero-visual {
-                order: -1
-            }
+            .hero-visual { order: -1 }
 
             .profile-wrap {
                 width: 260px;
                 height: 260px
             }
 
-            .float-chip {
-                display: none
-            }
+            .float-chip { display: none }
         }
 
         @media(max-width:900px) {
@@ -1366,57 +1328,32 @@
         }
 
         @media(max-width:768px) {
-            nav {
-                padding: 1rem 1.25rem
-            }
+            nav { padding: 1rem 1.25rem }
+            nav.scrolled { padding: 0.8rem 1.25rem }
+            .nav-links { display: none }
 
-            nav.scrolled {
-                padding: 0.8rem 1.25rem
-            }
+            section { padding: 5rem 1.25rem }
 
-            .nav-links {
-                display: none
-            }
-
-            section {
-                padding: 5rem 1.25rem
-            }
-
-            #hero {
-                padding: 7rem 1.25rem 4rem
-            }
+            #hero { padding: 7rem 1.25rem 4rem }
 
             .profile-wrap {
                 width: 200px;
                 height: 200px
             }
 
-            .hero-stats {
-                gap: 1.5rem
-            }
-
-            .stat-num {
-                font-size: 1.8rem
-            }
+            .hero-stats { gap: 1.5rem }
+            .stat-num { font-size: 1.8rem }
 
             .skills-wrapper,
             .projects-grid,
             .edu-grid,
-            .certs-grid {
-                grid-template-columns: 1fr
-            }
+            .certs-grid,
+            .achievements-grid { grid-template-columns: 1fr }
 
-            .timeline::before {
-                left: 6px
-            }
+            .timeline::before { left: 6px }
+            .timeline-item { padding-left: 2rem }
 
-            .timeline-item {
-                padding-left: 2rem
-            }
-
-            .cert-modal-box {
-                width: 95vw
-            }
+            .cert-modal-box { width: 95vw }
         }
     </style>
     <base target="_blank">
@@ -1437,22 +1374,24 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certs</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- ═══════════════ HERO ═══════════════ -->
     <section id="hero">
         <div class="hero-content">
             <div class="hero-tag reveal"><span class="dot"></span>Available for Opportunities</div>
             <h1 class="hero-name reveal"><span>Rahul</span><span>Singh.</span></h1>
-            <p class="hero-role reveal">Python Developer & AI/ML Developer — Bangalore, India</p>
-            <p class="hero-bio reveal">MCA student with a strong foundation in software development, data analysis, and
-                business process understanding. Building intelligent systems at the intersection of <strong>AI/ML</strong>
-                and <strong>Python</strong> — passionate about Python developer, workflow automation, and scalable backend
-                solutions.</p>
+            <p class="hero-role reveal">Python Developer & Data Analyst — Bangalore, India</p>
+            <p class="hero-bio reveal">MCA student with a strong foundation in software development, <strong>data analysis</strong>, and
+                business process understanding. Proficient in <strong>SQL, Python</strong>, and data-driven problem solving — building
+                intelligent systems at the intersection of <strong>AI/ML</strong> and backend development, with a passion
+                for workflow automation and scalable solutions.</p>
             <div class="hero-actions reveal">
                 <a href="#projects" class="btn-primary">View My Work ↓</a>
-                <a href="mailto:rahul10singh01@gmail.com" class="btn-outline">Get in Touch →</a>
+                <a href="mailto:rahul01singh10@gmail.com" class="btn-outline">Get in Touch →</a>
             </div>
             <div class="hero-stats reveal">
                 <div>
@@ -1464,7 +1403,7 @@
                     <div class="stat-label">Internships</div>
                 </div>
                 <div>
-                    <div class="stat-num"><span class="count-num" data-target="9">0</span>+</div>
+                    <div class="stat-num"><span class="count-num" data-target="12">0</span>+</div>
                     <div class="stat-label">Certifications</div>
                 </div>
                 <div>
@@ -1479,12 +1418,13 @@
                 <div class="profile-ring-2"></div>
                 <div class="profile-img-wrap"><img src="portfolio.png" alt="Rahul Singh" /></div>
                 <div class="float-chip chip1">⚡ AI / ML</div>
-                <div class="float-chip chip2">🚀 Python Dev</div>
+                <div class="float-chip chip2">📊 Data Analyst</div>
                 <div class="float-chip chip3">🎓 MCA @ DAiT</div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ ABOUT ═══════════════ -->
     <section id="about">
         <div class="reveal" style="max-width:1200px;margin:0 auto;">
             <p class="section-label">01 — About Me</p>
@@ -1494,7 +1434,8 @@
             <div class="about-text reveal-left">
                 <p>I'm <strong>Rahul Singh</strong>, a Master of Computer Applications (MCA) student at Dr. Ambedkar
                     Institute of Technology, Bangalore. My journey spans backend development, AI-integrated
-                    applications, and an ever-growing interest in CRM platforms like Zoho.</p>
+                    applications, and data analysis — with a growing interest in ERP & SAP systems and business
+                    process automation.</p>
                 <p>I had the privilege of working with <strong>Guruvithya IT Services Pvt. Ltd. (IBM
                         Collaboration)</strong>, where I built a production-ready AI-powered video dubbing and
                     translation platform — a project that sharpened my skills in AI pipelines, Agile workflows, and
@@ -1508,8 +1449,8 @@
                     <div class="about-card-icon">🎯</div>
                     <div>
                         <div class="about-card-title">Career Goal</div>
-                        <div class="about-card-text">Build a career in Python development & business automation,
-                            applying AI/ML thinking to enterprise workflows.</div>
+                        <div class="about-card-text">Build a career in data analysis and Python development, applying
+                            SQL, Power BI, and AI/ML thinking to transform raw data into business insights.</div>
                     </div>
                 </div>
                 <div class="about-card">
@@ -1517,29 +1458,30 @@
                     <div>
                         <div class="about-card-title">AI Enthusiast</div>
                         <div class="about-card-text">Built AI platforms using Whisper, Gemini, RAG, LLMs and deployed
-                            them in a structured enterprise environment.</div>
+                            them in a structured enterprise environment mentored by IBM India Pvt. Ltd.</div>
                     </div>
                 </div>
                 <div class="about-card">
                     <div class="about-card-icon">📊</div>
                     <div>
                         <div class="about-card-title">Data-Driven Thinker</div>
-                        <div class="about-card-text">Proficient in SQL, Python, Power BI, and Excel for turning raw data
-                            into actionable business insights.</div>
+                        <div class="about-card-text">Proficient in SQL, Python, Power BI, and Excel for turning raw
+                            data into actionable business insights and clear visual reports.</div>
                     </div>
                 </div>
                 <div class="about-card">
                     <div class="about-card-icon">🏆</div>
                     <div>
                         <div class="about-card-title">IBM Collaboration</div>
-                        <div class="about-card-text">Delivered a production-ready AI platform in a real enterprise
-                            environment mentored by IBM India Pvt. Ltd.</div>
+                        <div class="about-card-text">Delivered a production-ready AI platform certified by DAiT with
+                            mentorship from IBM India Pvt. Ltd. in a structured enterprise environment.</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ SKILLS ═══════════════ -->
     <section id="skills">
         <div class="reveal" style="max-width:1200px;margin:0 auto;">
             <p class="section-label">02 — Skills</p>
@@ -1548,43 +1490,69 @@
         <div class="skills-wrapper stagger reveal">
             <div class="skill-category">
                 <div class="skill-cat-title">⚙️ Programming & Query</div>
-                <div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span
-                        class="skill-tag">Java</span><span class="skill-tag">JavaScript</span><span
-                        class="skill-tag">HTML</span><span class="skill-tag">CSS</span></div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                </div>
             </div>
             <div class="skill-category">
                 <div class="skill-cat-title">🤖 AI & ML</div>
-                <div class="skill-tags"><span class="skill-tag">Scikit-learn</span><span
-                        class="skill-tag">RAG</span><span class="skill-tag">LLM</span><span
-                        class="skill-tag">NLP</span><span class="skill-tag">Whisper</span><span class="skill-tag">Gemini
-                        API</span><span class="skill-tag">Edge TTS</span></div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Scikit-learn</span>
+                    <span class="skill-tag">RAG</span>
+                    <span class="skill-tag">LLM</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">Whisper</span>
+                    <span class="skill-tag">Gemini API</span>
+                    <span class="skill-tag">Edge TTS</span>
+                </div>
             </div>
             <div class="skill-category">
                 <div class="skill-cat-title">🔧 Backend & Frameworks</div>
-                <div class="skill-tags"><span class="skill-tag">Flask</span><span class="skill-tag">REST
-                        APIs</span><span class="skill-tag">FFmpeg</span><span class="skill-tag">Git</span><span
-                        class="skill-tag">VS Code</span><span class="skill-tag">Jupyter</span></div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">FFmpeg</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">VS Code</span>
+                </div>
             </div>
             <div class="skill-category">
                 <div class="skill-cat-title">📊 Data & Reporting</div>
-                <div class="skill-tags"><span class="skill-tag">Power BI</span><span class="skill-tag">Excel</span><span
-                        class="skill-tag">Data Analysis</span><span class="skill-tag">Business Intelligence</span></div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Business Intelligence</span>
+                </div>
             </div>
             <div class="skill-category">
-                <div class="skill-cat-title">🏢 Concepts</div>
-                <div class="skill-tags"><span class="skill-tag">Data Analysis</span><span class="skill-tag">Business Process Understanding
-                        </span><span class="skill-tag">OOP</span><span class="skill-tag">ERP 
-                        Basics</span><span class="skill-tag">Cloud Basics</span></div>
+                <div class="skill-cat-title">🏢 Domain Knowledge</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Business Process Understanding</span>
+                    <span class="skill-tag">ERP Basics</span>
+                    <span class="skill-tag">Cloud Basics</span>
+                    <span class="skill-tag">OOP</span>
+                </div>
             </div>
             <div class="skill-category">
-                <div class="skill-cat-title">🧠 Concepts & Soft Skills</div>
-                <div class="skill-tags"><span class="skill-tag">OOP</span><span class="skill-tag">Agile</span><span
-                        class="skill-tag">Analytical Thinking</span><span class="skill-tag">Problem Solving</span><span
-                        class="skill-tag">Teamwork</span><span class="skill-tag">Communication</span></div>
+                <div class="skill-cat-title">🧠 Soft Skills</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile</span>
+                    <span class="skill-tag">Analytical Thinking</span>
+                    <span class="skill-tag">Problem Solving</span>
+                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Communication</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
     <section id="experience">
         <div class="reveal" style="max-width:800px;margin:0 auto;">
             <p class="section-label">03 — Experience</p>
@@ -1598,17 +1566,13 @@
                         <div class="exp-role">AI Backend Developer Intern</div>
                         <div class="exp-period">Sep 2025 – Nov 2025</div>
                     </div>
-                    <div class="exp-company">Guruvithya IT Services Pvt. Ltd. (IBM Collaboration) · Bangalore, India
-                    </div>
+                    <div class="exp-company">Guruvithya IT Services Pvt. Ltd. (IBM Collaboration) · Bangalore, India</div>
                     <ul class="exp-points">
-                        <li>Built an AI-powered video dubbing and translation platform using Flask, Whisper, Gemini, and
-                            Edge TTS.</li>
+                        <li>Built an AI-powered video dubbing and translation platform using Flask, Whisper, Gemini, and Edge TTS.</li>
                         <li>Developed backend APIs for transcription, translation, and real-time voice processing.</li>
-                        <li>Implemented media pipelines with FFmpeg and added multi-language support for 20+ languages.
-                        </li>
+                        <li>Implemented media pipelines with FFmpeg and added multi-language support for 20+ languages.</li>
                         <li>Applied Agile methodology and optimized performance for scalable media processing.</li>
-                        <li>Project certified by Dr. Ambedkar Institute of Technology with mentorship from IBM India
-                            Pvt. Ltd.</li>
+                        <li>Project certified by Dr. Ambedkar Institute of Technology with mentorship from IBM India Pvt. Ltd.</li>
                     </ul>
                 </div>
             </div>
@@ -1621,18 +1585,16 @@
                     </div>
                     <div class="exp-company">Academor · Remote</div>
                     <ul class="exp-points">
-                        <li>Designed and maintained backend databases to manage and store user interaction data
-                            efficiently.</li>
-                        <li>Integrated REST APIs to enhance real-time data features and improve application
-                            responsiveness.</li>
-                        <li>Improved overall application efficiency through optimized data validation and backend
-                            processes.</li>
+                        <li>Designed and maintained backend databases to manage and store user interaction data efficiently.</li>
+                        <li>Integrated REST APIs to enhance real-time data features and improve application responsiveness.</li>
+                        <li>Improved overall application efficiency through optimized data validation and backend processes.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
     <section id="projects">
         <div class="reveal" style="max-width:1200px;margin:0 auto;">
             <p class="section-label">04 — Projects</p>
@@ -1646,22 +1608,28 @@
                 <div class="project-desc">An AI-powered video dubbing and translation platform that automates
                     speech-to-text, contextual translation, and multi-language voice synthesis for media content.
                     Supports 20+ languages with real-time processing.</div>
-                <div class="project-tech"><span class="tech-badge">Flask</span><span
-                        class="tech-badge">Whisper</span><span class="tech-badge">Gemini</span><span
-                        class="tech-badge">Edge TTS</span><span class="tech-badge">FFmpeg</span><span
-                        class="tech-badge">Python</span></div>
+                <div class="project-tech">
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">Whisper</span>
+                    <span class="tech-badge">Gemini</span>
+                    <span class="tech-badge">Edge TTS</span>
+                    <span class="tech-badge">FFmpeg</span>
+                    <span class="tech-badge">Python</span>
+                </div>
             </div>
             <div class="project-card">
                 <div class="project-card-glow"></div>
                 <div class="project-num">02</div>
-                <div class="project-title">EduMind AI — Student Assistant</div>
+                <div class="project-title">Student AI Chat Bot</div>
                 <div class="project-desc">An AI-powered study assistant using Retrieval-Augmented Generation (RAG) to
-                    enable interactive document-based learning, real-time Q&A, flashcard generation, and an AI study
-                    planner.</div>
-                <div class="project-tech"><span class="tech-badge">Python</span><span
-                        class="tech-badge">FastAPI</span><span class="tech-badge">RAG</span><span
-                        class="tech-badge">FAISS</span><span class="tech-badge">LangChain</span><span
-                        class="tech-badge">Groq</span></div>
+                    enable interactive document-based learning, real-time Q&amp;A, and automated flashcard generation
+                    from uploaded study materials.</div>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">RAG</span>
+                    <span class="tech-badge">LLM</span>
+                    <span class="tech-badge">NLP</span>
+                </div>
             </div>
             <div class="project-card">
                 <div class="project-card-glow"></div>
@@ -1670,9 +1638,12 @@
                 <div class="project-desc">A machine learning-powered recommendation engine that suggests personalized
                     movies based on user preferences, viewing history, and content similarity algorithms using
                     collaborative filtering techniques.</div>
-                <div class="project-tech"><span class="tech-badge">Python</span><span
-                        class="tech-badge">Scikit-learn</span><span class="tech-badge">Machine Learning</span><span
-                        class="tech-badge">Pandas</span></div>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">Machine Learning</span>
+                    <span class="tech-badge">Pandas</span>
+                </div>
             </div>
             <div class="project-card">
                 <div class="project-card-glow"></div>
@@ -1681,12 +1652,16 @@
                 <div class="project-desc">Designed and deployed a personal portfolio website showcasing projects,
                     skills, and achievements with a clean, responsive UI using modern web technologies and interactive
                     animations.</div>
-                <div class="project-tech"><span class="tech-badge">HTML</span><span class="tech-badge">CSS</span><span
-                        class="tech-badge">JavaScript</span></div>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
     <section id="education">
         <div class="reveal" style="max-width:1200px;margin:0 auto;">
             <p class="section-label">05 — Education</p>
@@ -1696,14 +1671,12 @@
             <div class="edu-card">
                 <div class="edu-degree">Master of Computer Applications (MCA)</div>
                 <div class="edu-school">Dr. Ambedkar Institute of Technology, Bangalore</div>
-                <div class="edu-meta"><span class="edu-year">2024 – 2026</span><span class="edu-grade">Pursuing</span>
-                </div>
+                <div class="edu-meta"><span class="edu-year">2024 – 2026</span><span class="edu-grade">Pursuing</span></div>
             </div>
             <div class="edu-card">
                 <div class="edu-degree">Bachelor of Computer Applications (BCA)</div>
                 <div class="edu-school">Reva University, Bangalore</div>
-                <div class="edu-meta"><span class="edu-year">2021 – 2024</span><span class="edu-grade">CGPA: 6.53</span>
-                </div>
+                <div class="edu-meta"><span class="edu-year">2021 – 2024</span><span class="edu-grade">CGPA: 6.53</span></div>
             </div>
             <div class="edu-card">
                 <div class="edu-degree">12th Standard</div>
@@ -1718,12 +1691,26 @@
         </div>
     </section>
 
+    <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
     <section id="certifications">
         <div class="reveal" style="max-width:1200px;margin:0 auto;">
             <p class="section-label">06 — Certifications</p>
             <h2 class="section-title">What I've <em>Earned</em></h2>
         </div>
         <div class="certs-grid stagger reveal">
+
+            <!-- 1. Data Analytics Job Simulation — NEW -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1uoL_RXo5bt-WNXd99tJiBjge9sVwvsO-/view?usp=sharing','_blank')">
+                <div class="cert-icon">📈</div>
+                <div>
+                    <div class="cert-name">Data Analytics Job Simulation</div>
+                    <div class="cert-issuer">Forage</div>
+                    <div class="cert-year">2025</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 2. IT Specialist — Databases -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1ziX1DEmUfs3AaFewExMm97vHEfaX5dxo/view?usp=drive_link','_blank')">
                 <div class="cert-icon">🏅</div>
                 <div>
@@ -1733,6 +1720,8 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
+
+            <!-- 3. Programming for Everybody Python -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1VpyQBOrlJKJn7OLrSLChVgyX-QAVVHWR/view?usp=drive_link','_blank')">
                 <div class="cert-icon">🐍</div>
                 <div>
@@ -1742,6 +1731,8 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
+
+            <!-- 4. Basics of Python — Infosys Springboard -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/11kJ8z5zPzoF8t6qIWou-qANqW3gxeswb/view?usp=sharing','_blank')">
                 <div class="cert-icon">🐍</div>
                 <div>
@@ -1751,15 +1742,41 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
-            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1OUkTphk33FV1sS92tOS5s_gtAM5DKJ2l/view?usp=sharing','_blank')">
-                <div class="cert-icon">🌐</div>
+
+            <!-- 5. Artificial Intelligence: Types of AI — NEW -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1Ls2zsjtGHjpMgaUWlrkbJ64JQZEmf_He/view?usp=sharing','_blank')">
+                <div class="cert-icon">🤖</div>
                 <div>
-                    <div class="cert-name">Web Development Internship</div>
-                    <div class="cert-issuer">Academor · Techfest</div>
-                    <div class="cert-year">May 2023 · ID: ACM23-711</div>
+                    <div class="cert-name">Artificial Intelligence: Types of Artificial Intelligence</div>
+                    <div class="cert-issuer">Infosys Springboard</div>
+                    <div class="cert-year">2023</div>
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
+
+            <!-- 6. Python for Data Science — NPTEL -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/16XHAt-sNfrTJ57RzNR6ztKxm6fT0DsUT/view?usp=sharing','_blank')">
+                <div class="cert-icon">📐</div>
+                <div>
+                    <div class="cert-name">Python for Data Science</div>
+                    <div class="cert-issuer">NPTEL (IIT)</div>
+                    <div class="cert-year">2023</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 7. Full Stack Java Development — Sonata Software -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1UDo1NWz7KcmcqR4aRn2NljLVF30ythQL/view?usp=sharing','_blank')">
+                <div class="cert-icon">☕</div>
+                <div>
+                    <div class="cert-name">Full Stack Java Development</div>
+                    <div class="cert-issuer">Sonata Software</div>
+                    <div class="cert-year">2024</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 8. Digital Engineering — NASSCOM -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1_ZqxDj7X_wZogHUYXVedKX7ZwThgrXvq/view?usp=sharing','_blank')">
                 <div class="cert-icon">🥇</div>
                 <div>
@@ -1769,6 +1786,41 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
+
+            <!-- 9. Research Methodologies and IPR — NEW -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1Gmdx9nKkWZltDCmy65SAs0ES3Oa_Bw32/view?usp=sharing','_blank')">
+                <div class="cert-icon">🔬</div>
+                <div>
+                    <div class="cert-name">Research Methodologies and IPR</div>
+                    <div class="cert-issuer">VTU</div>
+                    <div class="cert-year">2023</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 10. Web Development — Academor -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1OUkTphk33FV1sS92tOS5s_gtAM5DKJ2l/view?usp=sharing','_blank')">
+                <div class="cert-icon">🌐</div>
+                <div>
+                    <div class="cert-name">Web Development Internship</div>
+                    <div class="cert-issuer">Academor · Techfest</div>
+                    <div class="cert-year">May 2023 · ID: ACM23-711</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 11. Power BI — SkillUp powered by Microsoft -->
+            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1yWu9mD9zGgx-6ZUaU8gWOC5uXoD6Iczw/view?usp=sharing','_blank')">
+                <div class="cert-icon">📊</div>
+                <div>
+                    <div class="cert-name">Power BI for Beginners</div>
+                    <div class="cert-issuer">SkillUp powered by Microsoft</div>
+                    <div class="cert-year">May 2026</div>
+                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                </div>
+            </div>
+
+            <!-- 12. Building Your Leadership Skills — HEC Paris -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1CudPhZ41acPA1mVTCVMqFTDUmHtmbRss/view?usp=sharing','_blank')">
                 <div class="cert-icon">👔</div>
                 <div>
@@ -1778,6 +1830,8 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
+
+            <!-- 13. English for Effective Business Speaking — HKUST -->
             <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1G-gJhrrK6QqMba7e2-5qc3T5JyDluOED/view?usp=sharing','_blank')">
                 <div class="cert-icon">🗣️</div>
                 <div>
@@ -1787,50 +1841,62 @@
                     <div class="cert-view-hint">Click to view certificate ↗</div>
                 </div>
             </div>
-            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1yWu9mD9zGgx-6ZUaU8gWOC5uXoD6Iczw/view?usp=sharing','_blank')">
-                <div class="cert-icon">📊</div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════ ACHIEVEMENTS ═══════════════ -->
+    <section id="achievements">
+        <div class="reveal" style="max-width:1200px;margin:0 auto;">
+            <p class="section-label">07 — Achievements</p>
+            <h2 class="section-title">What I've <em>Won</em></h2>
+        </div>
+        <div class="achievements-grid stagger reveal">
+            <div class="achievement-card">
+                <div class="achievement-icon">🏢</div>
                 <div>
-                    <div class="cert-name">Power BI for Beginners</div>
-                    <div class="cert-issuer">Power BI Certification</div>
-                    <div class="cert-year">May 2026</div>
-                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                    <div class="achievement-title">IBM Collaboration Internship</div>
+                    <div class="achievement-text">Completed a structured enterprise internship at Guruvithya IT Services
+                        (IBM Collaboration), delivering a production-ready AI dubbing and translation platform within
+                        a real-world enterprise environment.</div>
                 </div>
             </div>
-            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/16XHAt-sNfrTJ57RzNR6ztKxm6fT0DsUT/view?usp=sharing','_blank')">
-                <div class="cert-icon">📐</div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🚀</div>
                 <div>
-                    <div class="cert-name">NPTEL Certification</div>
-                    <div class="cert-issuer">NPTEL (IIT)</div>
-                    <div class="cert-year">2023</div>
-                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                    <div class="achievement-title">4+ End-to-End Projects</div>
+                    <div class="achievement-text">Successfully built and deployed 4+ end-to-end projects spanning AI,
+                        ML, and full-stack development during academic tenure — covering NLP, recommendation systems,
+                        and media processing pipelines.</div>
                 </div>
             </div>
-            <div class="cert-card" onclick="window.open('https://drive.google.com/file/d/1UDo1NWz7KcmcqR4aRn2NljLVF30ythQL/view?usp=sharing','_blank')">
-                <div class="cert-icon">☕</div>
+            <div class="achievement-card">
+                <div class="achievement-icon">🎨</div>
                 <div>
-                    <div class="cert-name">Full Stack Java Development</div>
-                    <div class="cert-issuer">Full Stack Certification</div>
-                    <div class="cert-year">2024</div>
-                    <div class="cert-view-hint">Click to view certificate ↗</div>
+                    <div class="achievement-title">Inter-School Sketching Competition Winner</div>
+                    <div class="achievement-text">Won an inter-school sketching competition, recognized for creativity
+                        and precision — a testament to the belief that artistic thinking and analytical reasoning go
+                        hand-in-hand.</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ═══════════════ CONTACT ═══════════════ -->
     <section id="contact">
         <div class="contact-inner reveal">
-            <p class="section-label">07 — Contact</p>
+            <p class="section-label">08 — Contact</p>
             <h2 class="section-title">Let's <em>Connect</em></h2>
-            <p class="contact-sub">I'm actively looking for opportunities in Python development, AI/ML, and business
-                automation. Whether it's a full-time role, internship, or just a conversation — I'd love to hear from
-                you.</p>
+            <p class="contact-sub">I'm actively looking for opportunities in data analysis, Python development, and
+                business automation. Whether it's a full-time role, internship, or just a conversation — I'd love to
+                hear from you.</p>
             <div class="contact-links">
-                <a href="mailto:rahul10singh01@gmail.com" class="contact-link">
+                <a href="mailto:rahul01singh10@gmail.com" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                         <rect x="2" y="4" width="20" height="16" rx="2" />
                         <path d="m2 7 10 7 10-7" />
                     </svg>
-                    rahul10singh01@gmail.com
+                    rahul01singh10@gmail.com
                 </a>
                 <a href="https://linkedin.com/in/rahul-singh-b388b1254" target="_blank" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="currentColor">
@@ -1842,8 +1908,7 @@
                 </a>
                 <a href="tel:+917259892446" class="contact-link">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.36 6.36l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.36 6.36l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
                     </svg>
                     +91 7259892446
                 </a>
@@ -1855,11 +1920,9 @@
         <p>Designed & built with care · Rahul Singh © 2025 · Bangalore, India</p>
     </footer>
 
-
     <script>
         // ═══════════════════════════════════════════════════════
         // ANTIGRAVITY-STYLE CONFETTI PARTICLE SYSTEM
-        // Dense colored dashes that react to mouse movement
         // ═══════════════════════════════════════════════════════
         (function () {
             const canvas = document.getElementById('particles-canvas');
@@ -1870,16 +1933,15 @@
             let mouseX = -9999, mouseY = -9999;
             const MOUSE_RADIUS = 130;
 
-            // Antigravity-style colors: Google brand palette
             const COLORS = [
-                '#EA4335', '#D93025',     // Google red
-                '#4285F4', '#1A73E8',     // Google blue
-                '#34A853', '#1E8E3E',     // Google green
-                '#FBBC04', '#F9AB00',     // Google yellow
-                '#FF6D00', '#E65100',     // orange
-                '#AB47BC', '#7B1FA2',     // purple
-                '#00ACC1', '#00838F',     // teal
-                '#EC407A', '#C2185B',     // pink
+                '#EA4335', '#D93025',
+                '#4285F4', '#1A73E8',
+                '#34A853', '#1E8E3E',
+                '#FBBC04', '#F9AB00',
+                '#FF6D00', '#E65100',
+                '#AB47BC', '#7B1FA2',
+                '#00ACC1', '#00838F',
+                '#EC407A', '#C2185B',
             ];
 
             function resize() {
@@ -1888,10 +1950,8 @@
             }
             resize();
 
-            // ─── Confetti Particle Factory ─────────────────────
             function createParticle() {
                 const color = COLORS[Math.floor(Math.random() * COLORS.length)];
-                // 75% dashes, 25% dots (matches Antigravity look)
                 const isDash = Math.random() > 0.25;
                 return {
                     x: Math.random() * W,
@@ -1902,7 +1962,6 @@
                     vy: 0,
                     color: color,
                     isDash: isDash,
-                    // Dashes: 4-10px long, 1.5-2.5px wide. Dots: 2-4px radius
                     len: isDash ? (4 + Math.random() * 6) : 0,
                     w: isDash ? (1.5 + Math.random() * 1) : (2 + Math.random() * 2),
                     rot: Math.random() * Math.PI * 2,
@@ -1915,7 +1974,6 @@
 
             function initParticles() {
                 confetti = [];
-                // Dense: ~550 for 1920x1080
                 const count = Math.max(250, Math.floor(W * H / 3800));
                 for (let i = 0; i < count; i++) {
                     const p = createParticle();
@@ -1928,89 +1986,51 @@
 
             window.addEventListener('resize', () => { resize(); initParticles(); });
 
-            // ─── Mouse Tracking (always active) ─────────────────
-            document.addEventListener('mousemove', e => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-            document.addEventListener('mouseenter', e => {
-                mouseX = e.clientX;
-                mouseY = e.clientY;
-            });
-            document.addEventListener('mouseleave', () => {
-                mouseX = -9999;
-                mouseY = -9999;
-            });
-            // Also track touch for mobile
+            document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+            document.addEventListener('mouseenter', e => { mouseX = e.clientX; mouseY = e.clientY; });
+            document.addEventListener('mouseleave', () => { mouseX = -9999; mouseY = -9999; });
             document.addEventListener('touchmove', e => {
-                if (e.touches.length > 0) {
-                    mouseX = e.touches[0].clientX;
-                    mouseY = e.touches[0].clientY;
-                }
+                if (e.touches.length > 0) { mouseX = e.touches[0].clientX; mouseY = e.touches[0].clientY; }
             }, { passive: true });
-            document.addEventListener('touchend', () => {
-                mouseX = -9999;
-                mouseY = -9999;
-            });
+            document.addEventListener('touchend', () => { mouseX = -9999; mouseY = -9999; });
 
-            // ─── Animation Loop ────────────────────────────────
             let frame = 0;
             function animate() {
                 frame++;
                 ctx.clearRect(0, 0, W, H);
-
                 const MR2 = MOUSE_RADIUS * MOUSE_RADIUS;
-
                 for (let i = 0; i < confetti.length; i++) {
                     const p = confetti[i];
-
-                    // ── Mouse repulsion (no gating — always check) ──
                     const dx = p.x - mouseX;
                     const dy = p.y - mouseY;
                     const distSq = dx * dx + dy * dy;
-
                     if (distSq < MR2 && distSq > 1) {
                         const dist = Math.sqrt(distSq);
                         const force = (1 - dist / MOUSE_RADIUS);
-                        const strength = force * force * 12; // quadratic for snappier feel
+                        const strength = force * force * 12;
                         p.vx += (dx / dist) * strength;
                         p.vy += (dy / dist) * strength;
                     }
-
-                    // ── Spring back to home ──
                     p.vx += (p.homeX - p.x) * 0.012;
                     p.vy += (p.homeY - p.y) * 0.012;
-
-                    // ── Gentle sinusoidal drift ──
                     const t = frame * p.driftSpd + p.phase;
                     p.vx += Math.sin(t) * 0.01;
                     p.vy += Math.cos(t * 0.7) * 0.01;
-
-                    // ── Damping ──
                     p.vx *= 0.90;
                     p.vy *= 0.90;
-
-                    // ── Update position ──
                     p.x += p.vx;
                     p.y += p.vy;
-
-                    // ── Slow rotation ──
                     p.rot += p.rotSpd;
-
-                    // ── Draw particle ──
                     ctx.save();
                     ctx.translate(p.x, p.y);
                     ctx.rotate(p.rot);
                     ctx.globalAlpha = p.alpha;
                     ctx.fillStyle = p.color;
-
                     if (p.isDash) {
-                        // Draw rounded dash using fillRect (universal support)
                         const hl = p.len / 2;
                         const hw = p.w / 2;
+                        const r = hw;
                         ctx.beginPath();
-                        // Rounded rectangle via arc + lineTo (works everywhere)
-                        const r = hw; // corner radius = half width
                         ctx.moveTo(-hl + r, -hw);
                         ctx.lineTo(hl - r, -hw);
                         ctx.arcTo(hl, -hw, hl, -hw + r, r);
@@ -2023,34 +2043,25 @@
                         ctx.closePath();
                         ctx.fill();
                     } else {
-                        // Draw dot
                         ctx.beginPath();
                         ctx.arc(0, 0, p.w / 2, 0, Math.PI * 2);
                         ctx.fill();
                     }
-
                     ctx.restore();
                 }
-
                 requestAnimationFrame(animate);
             }
             animate();
         })();
 
-
         // ═══════════════════════════════════════════════════════
-        // CURSOR GLOW — Follows mouse with smooth interpolation
+        // CURSOR GLOW
         // ═══════════════════════════════════════════════════════
         (function () {
             const glow = document.getElementById('cursor-glow');
             if (!glow) return;
             let glowX = 0, glowY = 0, targetX = 0, targetY = 0;
-
-            document.addEventListener('mousemove', e => {
-                targetX = e.clientX;
-                targetY = e.clientY;
-            });
-
+            document.addEventListener('mousemove', e => { targetX = e.clientX; targetY = e.clientY; });
             function updateGlow() {
                 glowX += (targetX - glowX) * 0.08;
                 glowY += (targetY - glowY) * 0.08;
@@ -2060,7 +2071,6 @@
             }
             updateGlow();
         })();
-
 
         // ═══════════════════════════════════════════════════════
         // SCROLL PROGRESS + NAV
@@ -2072,39 +2082,30 @@
             document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 40);
         });
 
-
         // ═══════════════════════════════════════════════════════
-        // SMOOTH SCROLL-LINKED SECTION PARALLAX
+        // SECTION PARALLAX
         // ═══════════════════════════════════════════════════════
         (function () {
             const sections = document.querySelectorAll('section');
-
             function updateParallax() {
-                const scrollY = window.scrollY;
                 const viewH = window.innerHeight;
-
                 sections.forEach(section => {
                     const rect = section.getBoundingClientRect();
                     const sectionCenter = rect.top + rect.height / 2;
                     const viewCenter = viewH / 2;
                     const offset = (sectionCenter - viewCenter) / viewH;
-
-                    // Subtle parallax shift for section content
                     const children = section.querySelectorAll('.section-label, .section-title');
                     children.forEach(child => {
-                        const shift = offset * -15;
-                        child.style.transform = `translateY(${shift}px)`;
+                        child.style.transform = `translateY(${offset * -15}px)`;
                     });
                 });
-
                 requestAnimationFrame(updateParallax);
             }
             updateParallax();
         })();
 
-
         // ═══════════════════════════════════════════════════════
-        // ENHANCED REVEAL ANIMATIONS WITH STAGGER
+        // REVEAL ANIMATIONS
         // ═══════════════════════════════════════════════════════
         const allReveals = document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.stagger');
         const revealObs = new IntersectionObserver((entries) => {
@@ -2116,7 +2117,6 @@
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
         allReveals.forEach(r => revealObs.observe(r));
-
 
         // ═══════════════════════════════════════════════════════
         // COUNTER ANIMATION
@@ -2144,7 +2144,6 @@
         }, { threshold: 0.5 });
         counters.forEach(c => counterObs.observe(c));
 
-
         // ═══════════════════════════════════════════════════════
         // PROJECT CARD GLOW FOLLOW
         // ═══════════════════════════════════════════════════════
@@ -2156,7 +2155,6 @@
                 glow.style.top = (e.clientY - rect.top) + 'px';
             });
         });
-
 
         // ═══════════════════════════════════════════════════════
         // MAGNETIC HOVER ON BUTTONS
@@ -2173,11 +2171,10 @@
             });
         });
 
-
         // ═══════════════════════════════════════════════════════
         // TILT EFFECT ON CARDS
         // ═══════════════════════════════════════════════════════
-        document.querySelectorAll('.skill-category, .about-card, .edu-card, .cert-card, .exp-card').forEach(card => {
+        document.querySelectorAll('.skill-category, .about-card, .edu-card, .cert-card, .exp-card, .achievement-card').forEach(card => {
             card.addEventListener('mousemove', e => {
                 const rect = card.getBoundingClientRect();
                 const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -2189,23 +2186,17 @@
             });
         });
 
-
         // ═══════════════════════════════════════════════════════
-        // SMOOTH SECTION SCROLL SNAP (keyboard aware)
+        // SMOOTH SCROLL
         // ═══════════════════════════════════════════════════════
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
-
-
     </script>
 
 </body>
-
 </html>
